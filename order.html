@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>اطلب الآن | وصلني</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      direction: rtl;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      text-align: center;
+      margin: 0 0 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #c8facc;
+    }
+
+    .about {
+      background-color: #ffffff;
+      padding: 40px 20px;
+    }
+
+    .about h3 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 30px;
+      color: #4CAF50;
+    }
+
+    .order-form {
+      background-color: #f1f1f1;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .order-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .order-form input,
+    .order-form textarea,
+    .order-form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+    }
+
+    .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #388e3c;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- رأس الصفحة -->
+  <header>
+    <div class="container">
+      <h1>🚚 وصلني - طلب توصيل</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="services.html">الخدمات</a></li>
+          <li><a href="pricing.html">الأسعار</a></li>
+          <li><a href="order.html">اطلب الآن</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- نموذج الطلب -->
+  <section class="about">
+    <div class="container">
+      <h3>📝 نموذج طلب خدمة توصيل</h3>
+      <form class="order-form" action="#" method="post">
+        <label>الاسم الكامل:</label>
+        <input type="text" name="fullName" required>
+
+        <label>رقم الهاتف:</label>
+        <input type="tel" name="phone" required>
+
+        <label>عنوان الاستلام:</label>
+        <input type="text" name="pickup" required>
+
+        <label>عنوان التوصيل:</label>
+        <input type="text" name="delivery" required>
+
+        <label>نوع الطرد:</label>
+        <select name="packageType" required>
+          <option value="">-- اختر نوع الطرد --</option>
+          <option value="documents">📄 مستندات</option>
+          <option value="food">🍔 طعام</option>
+          <option value="package">📦 طرد عادي</option>
+          <option value="custom">🔧 خدمة مخصصة</option>
+        </select>
+
+        <label>ملاحظات إضافية:</label>
+        <textarea name="notes" rows="4"></textarea>
+
+        <button type="submit" class="btn">إرسال الطلب</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- تذييل -->
+  <footer>
+    <div class="container">
+      <p>© 2025 وصلني - جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الأسعار | وصلني</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      direction: rtl;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      text-align: center;
+      margin: 0 0 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #c8facc;
+    }
+
+    .about {
+      background-color: #ffffff;
+      padding: 40px 20px;
+    }
+
+    .about h3 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 30px;
+      color: #4CAF50;
+    }
+
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .pricing-table thead {
+      background-color: #f1f1f1;
+    }
+
+    .pricing-table tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+
+    .note {
+      text-align: center;
+      font-size: 16px;
+      color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- رأس الصفحة -->
+  <header>
+    <div class="container">
+      <h1>🚚 وصلني - الأسعار</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="services.html">الخدمات</a></li>
+          <li><a href="pricing.html">الأسعار</a></li>
+          <li><a href="order.html">اطلب الآن</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- قسم الأسعار -->
+  <section class="about">
+    <div class="container">
+      <h3>💰 جدول الأسعار</h3>
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>نوع الخدمة</th>
+            <th>السعر (دج)</th>
+            <th>المدة التقديرية</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>توصيل داخل نفس الحي</td>
+            <td>200</td>
+            <td>30 - 45 دقيقة</td>
+          </tr>
+          <tr>
+            <td>توصيل بين الأحياء</td>
+            <td>400</td>
+            <td>45 - 60 دقيقة</td>
+          </tr>
+          <tr>
+            <td>توصيل سريع (Express)</td>
+            <td>500</td>
+            <td>أقل من 30 دقيقة</td>
+          </tr>
+          <tr>
+            <td>توصيل مخصص (VIP)</td>
+            <td>حسب الطلب</td>
+            <td>حسب التنسيق</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="note">💳 الدفع نقدًا أو عبر التطبيق عند الاستلام.</p>
+    </div>
+  </section>
+
+  <!-- تذييل -->
+  <footer>
+    <div class="container">
+         <p>created by akalabdelhakamine38@gmail.com</p>
+      <p>© 2025 وصلني - جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+</body>
+</html>
